@@ -43,7 +43,7 @@ const MealInfo = () => {
                 <div>Meal: {meal.strMeal}</div>
                 <div>
                   Youtube:
-                  <a style={{ marginLeft: '5px' }} href={meal.strYoutube} target='_blank'>
+                  <a style={{ marginLeft: '5px' }} rel='noreferrer' href={meal.strYoutube} target='_blank'>
                     {meal.strYoutube}
                   </a>
                 </div>

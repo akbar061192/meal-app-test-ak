@@ -17,6 +17,7 @@ const App = () => {
         <Route path='/categories' element={<MealCategories />} />
         <Route path='/random-meal' element={<RandomMeal />} />
       </Routes>
+      <Footer />
     </div>
   );
 };
