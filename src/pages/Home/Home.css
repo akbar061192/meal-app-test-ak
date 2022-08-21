@@ -1,0 +1,53 @@
+.container {
+  margin-top: 60px;
+}
+
+.meal-search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input {
+  margin-right: 10px;
+  padding: 10px;
+  width: 300px;
+  font-size: large;
+}
+
+button {
+  padding: 10px;
+  width: 80px;
+}
+
+.meals {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 40px;
+}
+
+.meal {
+  margin: 20px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.image {
+  width: 300px;
+  border-radius: 5px;
+  transition: all 0.4s ease;
+}
+
+.image:hover {
+  margin-bottom: 10px;
+  transform: scale(1.1);
+}
+
+h4 {
+  text-align: center;
+  width: 300px;
+  font-size: 20px;
+  color: black;
+}

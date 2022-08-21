@@ -1,0 +1,15 @@
+.random {
+  margin: 20px;
+}
+
+.random-meal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+button {
+  width: 200px;
+  margin: 10px;
+}

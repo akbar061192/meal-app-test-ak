@@ -1,0 +1,14 @@
+.single-meal-container {
+  margin: 50px;
+}
+
+.single-meal {
+  display: flex;
+}
+
+.single-meal-data {
+  margin: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}

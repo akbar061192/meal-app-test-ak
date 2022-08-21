@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Footer from './components/Footer/Footer';
+import Navbar from './components/Navbar/Navbar';
+import Home from './pages/Home/Home';
+import { Route, Routes } from 'react-router-dom';
+import MealInfo from './pages/MealInfo/MealInfo';
+import MealCategories from './pages/MealCategories/MealCategories';
+import RandomMeal from './pages/RandomMeal/RandomMeal';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Navbar />
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/:id' element={<MealInfo />} />
+        <Route path='/categories' element={<MealCategories />} />
+        <Route path='/random-meal' element={<RandomMeal />} />
+      </Routes>
     </div>
   );
-}
+};
 
 export default App;
